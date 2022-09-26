@@ -35,7 +35,7 @@ API_VERSIONS = {v: None
 
 
 def make_client(instance):
-    """Returns a instance_ha proxy"""
+    """Returns an instance_ha proxy"""
     LOG.debug('Instantiating masakari service client')
     con = Connection(session=instance.session,
                      interface=instance.interface,
